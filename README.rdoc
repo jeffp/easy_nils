@@ -1,0 +1,42 @@
+= EasyNils
+
+Why write this
+
+  user && user.account && user.account.authorized?
+
+when what you want is this
+
+  user.account.authorized?
+
+SmartNils lets you abridge compound conditional expressions returning nil if any of the method calls return nil.
+
+== Resources
+
+Install
+
+* sudo gem install easy_nils
+
+Use
+
+* require 'easy_nils'
+
+Rails
+
+* gem.config 'easy_nils'
+
+== Usage
+
+If you need to explicitly test for a nil value, then do so
+
+  if user.account.authorized?
+    ... do something for an authorized account
+  elsif user.nil? || user.account.nil?
+    ... do something here for the nil case
+  else
+    ... do someting for an unauthorized account
+  end
+
+
+== Dependencies
+
+* meta_programming
