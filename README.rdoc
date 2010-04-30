@@ -8,7 +8,7 @@ when what you want is this
 
   user.account.authorized?
 
-SmartNils lets you abridge compound conditional expressions returning nil if any of the method calls return nil.
+EasyNils lets you abridge compound conditional expressions returning nil if any of the method calls return nil.
 
 == Resources
 
