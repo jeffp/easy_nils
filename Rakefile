@@ -13,7 +13,7 @@ spec = Gem::Specification.new do |s|
   s.description = 'Simpler nil handling.'
   s.summary = 'Abridge compound conditional statements to a single expression.'
 
-  s.add_dependency('meta_programming', '>= 0.0.3')
+  s.add_dependency('meta_programming', '>= 0.0.6')
   
   exclude_folders = '' # 'spec/rails/{doc,lib,log,nbproject,tmp,vendor,test}'
   exclude_files = [] # FileList['**/*.log'] + FileList[exclude_folders+'/**/*'] + FileList[exclude_folders]
